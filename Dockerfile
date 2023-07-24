@@ -1,4 +1,4 @@
-FROM alpine:3.18.2
+FROM openjdk:8
 WORKDIR /src
 
 COPY . /src/
