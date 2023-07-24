@@ -1,7 +1,7 @@
 FROM alpine:3.18.2
-WORKDIR /src/main/java/safa/App.java
+WORKDIR /src
 
-COPY . /src/main/java/safa/App.java
+COPY . /src/
 
 RUN javac App.java
 
