@@ -1,7 +1,13 @@
 FROM openjdk:11
-COPY . /usr/src/myapp
-WORKDIR src/main/java/safa/App.java
 
-RUN javac App.java
-CMD ["java", "App"]
+# Set the working directory
+WORKDIR /usr/src/myapp
 
+# Copy the entire project into the container
+COPY . .
+
+# Compile the Java code
+RUN javac src/main/java/safa/App.java
+
+# Set the entry point for the container
+CMD ["java", "App.java"]
