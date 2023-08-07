@@ -9,7 +9,7 @@ public class App
         // Stores two numbers
         double num1, num2, num3;
 	num1 = 5;
-	num2 = 7
+	num2 = 7;
 	num3 = num1 + num2;
 	// print the final result
 	System.out.println(num3);
