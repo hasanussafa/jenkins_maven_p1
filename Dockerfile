@@ -10,4 +10,4 @@ COPY . .
 RUN javac src/main/java/safa/App.java
 
 # Set the entry point for the container
-CMD ["java", "App.java"]
+CMD ["java", "safa.App"]
